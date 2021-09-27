@@ -1,0 +1,135 @@
+#offerHeader{
+    margin-left: 64px;
+    margin-top: 64px;
+    width: 60%;
+    background-color: red;
+    display:inline-block;
+
+   }
+#offerDate{
+    width: 100%;
+}
+
+#filters{
+    width: 85%;
+}
+
+#offerFilters1 {
+    width: 41.5%;
+    align-items: flex-start;
+    margin-left: 5%;
+    margin-bottom: 3%;
+    display: block;
+    float: left;
+}
+
+#offerFilters2 {
+    width: 41.5%;
+    margin-bottom: 3%;
+    align-items: flex-end;
+    display: block;
+    float: right;
+    margin-right: 4.4%;
+}
+
+#refreshButton{
+    border-radius: 40%;
+    margin-left:2%;
+    background-color:white;
+    float: right;
+    display: block;
+    margin-right:2.5%;
+    margin-top:2.2%;
+}
+
+#searchBar{
+    padding: 0.85%;
+    border: 3px solid grey;
+    border-radius: 10px;
+}
+
+#searchDiv{
+    width: 76%; 
+    display: inline-block;
+    margin-left: 3.95%;
+    margin-bottom: 4%;
+}
+
+#sortBy{
+    margin-top: 2.5%;
+}
+
+#list{
+    width: 117.3%;
+    margin-left: -15.6%;
+}
+
+#divider{
+    margin:0.85%;
+    background-color: gray;
+}
+
+#loading{
+    margin-top: 3%;
+    text-align: center;
+}
+
+#chip{
+    color: black;
+    background-color: #7FDBFF;
+    margin-right: 0.3%;
+    font-weight: bold;
+}
+
+#details {
+  color: blue;
+  display: inline-block;
+}
+
+#docs{
+    display: inline-block;
+    width:100%;
+    max-width: 41.5%;
+}
+
+
+#title {
+  color: black;
+  font-weight: bold;
+}
+
+#description {
+  color: darkslategray;
+  word-wrap: break-word;
+  max-width: 75%;
+  display: block;
+}
+
+#description{
+    color:black;
+}
+
+#newState{
+    background-color: green;
+    color: beige;
+}
+
+#completedState{
+    background-color: brown;
+    color: beige;
+}
+
+#paidState{
+    background-color: white;
+    color: darkblue;
+}
+
+#canceledState{
+    background-color: red;
+    color:beige;
+}
+
+#matchedState{
+    background-color: coral;
+    color: beige;
+}

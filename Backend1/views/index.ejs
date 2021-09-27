@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Solace-PayPal</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <h1>A sample offer</h1>
+
+  <form action="/api/transactions/paymentFromRequester" method="post">
+    <input id="tokenField" type="text" placeholder="Bearer token" />
+    <input id="offerId" type="text" placeholder="offerId"></input>
+    <button id="submitButton" type="button">Send</input>
+  </form>
+
+  <script>
+
+    $('#submitButton').on('click', function () {
+      $.ajax({
+        "url": "http://localhost:3000/api/offers/pay/" + $('#offerId').val(),
+        "type": 'PUT',
+        "data": {
+          price: $('#price').val()
+        },
+        "contentType": 'text/json',
+        "headers": {
+          "Authorization": "Bearer " + $('#tokenField').val()
+        },
+        "async": true,
+        success: function(responsedata){
+               // process on data
+               console.log(responsedata);
+               window.location.href = responsedata.redirect;
+
+        }
+      })
+    });
+  </script>
+</body>
+
+</html>

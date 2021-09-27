@@ -1,0 +1,34 @@
+#userheader {
+    font-size: 23px;
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+
+#userprofilerating{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.userProfimg{
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+  }
+
+  #entryuser {
+    font-size:17px;
+    border:1px solid black;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    padding: 15px;
+
+  }
+  #textEntry{
+    width:280px;
+     }
+ #entrySpace {
+   height: 10px;
+ }
+
+  

@@ -1,0 +1,93 @@
+.root {
+  max-width: 750px;
+  padding: 16px;
+  /* margin-top: 32px; */
+  margin: 32px auto 16px;
+}
+
+.title {
+  display: inline;
+}
+
+.state {
+  float: right;
+}
+
+.description {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding-left: 16px;
+}
+
+.action {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.action .cancel {
+  color: red;
+  border-color: red;
+}
+
+.action .pay {
+    color: blue;
+    border-color: blue;
+}
+
+.loading {
+  margin-top: 64px;
+  text-align: center;
+}
+
+.root > .avatar {
+  float: left;
+  margin-right: 16px;
+  background-color: black;
+}
+
+.details {
+  padding: 16px;
+}
+
+div > .tag {
+  background-color: #7FDBFF;
+  color: black;
+  margin-right: 8px;
+  font-weight: bold;
+}
+
+div > .formControl {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  min-width: 200px;
+}
+
+.appliedUsersSection {
+  padding: 32px;
+}
+
+.appliedUserNotification {
+  margin: 32px;
+  padding: 16px;
+  background: lightyellow;
+  border: 2px solid peachpuff;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.reviewedNotification {
+  margin: 32px;
+  padding: 16px;
+  background: rgb(212, 240, 212);
+  border: 2px solid darkgreen;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.emptyApplicationList {
+  margin-left: 16px;
+  margin-top: 16px;
+  font-weight: bold;
+}

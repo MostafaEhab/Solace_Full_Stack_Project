@@ -1,0 +1,40 @@
+{
+  "name": "sebamaster-solace-backend",
+  "version": "1.0.0",
+  "description": "SEBAMaster solace backend as a service",
+  "main": "server.js",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.lrz.de/seba-master-2021/team-32/backend.git"
+  },
+  "author": "team-32",
+  "license": "MIT",
+  "homepage": "https://gitlab.lrz.de/seba-master-2021/team-32/backend.git#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./server.js",
+    "devstart": "nodemon ./server.js",
+    "devstart:debug": "nodemon --inspect ./server.js"
+  },
+  "dependencies": {
+    "@paypal/checkout-server-sdk": "^1.0.2",
+    "bcryptjs": "2.4.3",
+    "body-parser": "^1.19.0",
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.16.2",
+    "express-validator": "^6.12.0",
+    "helmet": "3.11.0",
+    "jsonwebtoken": "8.1.1",
+    "moment": "^2.29.1",
+    "mongoose": "^5.12.13",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "paypal-node-sdk": "^2.0.3",
+    "validator": "^13.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
